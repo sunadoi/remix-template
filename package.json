@@ -5,8 +5,10 @@
   "license": "",
   "sideEffects": false,
   "scripts": {
-    "build": "remix build",
-    "dev": "remix dev"
+    "dev": "remix dev",
+    "lint": "prettier --check app",
+    "lint:fix": "prettier --write app",
+    "build": "remix build"
   },
   "dependencies": {
     "@remix-run/node": "^1.4.0",
@@ -23,6 +25,7 @@
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
     "eslint": "^8.11.0",
+    "prettier": "^2.6.2",
     "typescript": "^4.6.3"
   },
   "engines": {
